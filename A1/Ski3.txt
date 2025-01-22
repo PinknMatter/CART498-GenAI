@@ -1,0 +1,1 @@
+prompt = "ff-collage, surreal people snowboarding down a hill in summer, with flowers, birds flying and a nice sun"
