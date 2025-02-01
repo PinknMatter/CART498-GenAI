@@ -1,0 +1,161 @@
+-------------------------------------------------------------------------------------------------------------------
+
+Iteration 5 * 6
+-+- Welcome to the AI Multiplication Bot! -+-
+I'll try my best with calculations, but no promises! I might be as reckless as Luffy with math! 
+
+Summon your base power level (enter n): 5
+How many training arcs (iterations) do you want? (enter i): 6
+
+Starting calculations with base number 5 for 6 iterations...
+
+Iteration 1:
+Calculating 5 * 5
+AI calculated: 25
+Correct result: 25
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 2:
+Calculating 25 * 25
+AI calculated: 625
+Correct result: 625
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 3:
+Calculating 625 * 625
+AI calculated: 390625
+Correct result: 390625
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 4:
+Calculating 390625 * 390625
+AI calculated: 152587890625
+Correct result: 152587890625
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 5:
+Calculating 152587890625 * 152587890625
+Error getting AI calculation: invalid literal for int() with base 10: '232,302,503,531,441,406,250.'
+AI calculated: 0
+Correct result: 23283064365386962890625
+
+(╯°□°）╯︵ ┻━┻  Oh no, I miscalculated like a noob in a shounen battle!  (￣Д￣)ﾉ Time to level up my math skills, senpai! (¬‿¬)
+
+Iteration 6:
+Calculating 23283064365386962890625 * 23283064365386962890625
+Error getting AI calculation: invalid literal for int() with base 10: '542101086142418202098634328258998464000000000000.'
+AI calculated: 0
+Correct result: 542101086242752217003726400434970855712890625
+
+Nyaa~! I totally *fumbled* that math problem like a clumsy magical girl! (≧▽≦) 💔 Math and I need to *kawaii* our way to victory! ✨✏️ (✿◕‿◕)♥ 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 5 * 5
+
+-+- Welcome to the AI Multiplication Bot! -+-
+I'll try my best with calculations, but no promises! I might be as reckless as Luffy with math! 
+
+Summon your base power level (enter n): 5
+How many training arcs (iterations) do you want? (enter i): 5
+
+Starting calculations with base number 5 for 5 iterations...
+
+Iteration 1:
+Calculating 5 * 5
+AI calculated: 25
+Correct result: 25
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 2:
+Calculating 25 * 25
+AI calculated: 625
+Correct result: 625
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 3:
+Calculating 625 * 625
+AI calculated: 390625
+Correct result: 390625
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 4:
+Calculating 390625 * 390625
+AI calculated: 152587890625
+Correct result: 152587890625
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 5:
+Calculating 152587890625 * 152587890625
+Error getting AI calculation: invalid literal for int() with base 10: '232302503007198632812890625.'
+-----------------------------------------------------------------------------------------------------------------------------------------
+Iteration 7 * 7
+
+-+- Welcome to the AI Multiplication Bot! -+-
+I'll try my best with calculations, but no promises! I might be as reckless as Luffy with math! 
+
+Summon your base power level (enter n): 7
+How many training arcs (iterations) do you want? (enter i): 7
+
+Starting calculations with base number 7 for 7 iterations...
+
+Iteration 1:
+Calculating 7 * 7
+AI calculated: 49
+Correct result: 49
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 2:
+Calculating 49 * 49
+AI calculated: 2401
+Correct result: 2401
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 3:
+Calculating 2401 * 2401
+AI calculated: 5764801
+Correct result: 5764801
+
+Baka! I got it right ＼(￣▽￣)／! 
+
+Iteration 4:
+Calculating 5764801 * 5764801
+AI calculated: 33112110064001
+Correct result: 33232930569601
+
+Oh no, I totally bumbled that math problem! (⌯˃̶᷄ ⌓˂̶᷄⌯) My brain's like a shounen protagonist who forgot his training arc! Gomen nasai! (╯°□°）
+
+Iteration 5:
+Calculating 33232930569601 * 33232930569601
+AI calculated: 1102020726003204579340494601
+Correct result: 1104427674243920646305299201
+
+Oh no, I went full-on *kawaii* in math class! (×_×; ) I guess my numbers couldn't handle my anime superpower! *facepalms*  (¬‿¬) Time to power up my brain! Let’s try again, senpai!
+
+Iteration 6:
+Calculating 1104427674243920646305299201 * 1104427674243920646305299201
+AI calculated: 1210000000000000000000000000000000000000000000000000000000000001
+Correct result: 1219760487635835700138573862562971820755615294131238401
+
+(￣^￣)ゞ Oh no! My math skills are like a shonen protagonist with no training! I keep miscalculating like a villain's evil plan that backfires! (╯°□°）╯︵ ┻━┻ Why can’t I just summon
+
+Iteration 7:
+Calculating 1219760487635835700138573862562971820755615294131238401 * 1219760487635835700138573862562971820755615294131238401
+AI calculated: 1487568620430454080246078969339201540226360833855170807422139144611140910641740681866911915363689328027504810249271845853909762090542801
+Correct result: 1487815647197611695910312681741273570332356717154798949898498305086387315423300999654757561928633305897036801
+
+(╯°□°)╯︵ ┻━┻ Math is like fighting a boss in a shonen anime, and I keep getting defeated! ( ꈍᴗꈍ) I'm like "Nani?! 2 + 2 = 5?" (
+AI calculated: 0
+Correct result: 23283064365386962890625
+
+Oops! I must have been distracted by my waifus! (╯°□°）╯︵ ┻━┻ Math is like trying to defeat a final boss without leveling up! (ノ^_^)ノ Gomen, senpai! I'll train harder! (｡
