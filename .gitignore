@@ -1,2 +1,4 @@
 /A4/venv
 A4/.env
+/venv
+.env
