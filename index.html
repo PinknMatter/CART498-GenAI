@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Slideshow</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: #000;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .text-display {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24px;
+            min-width: 300px;
+            backdrop-filter: blur(5px);
+        }
+
+        .loading-indicator {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #ffffff;
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            opacity: 0;
+        }
+
+        .loading-indicator.active {
+            opacity: 1;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="loading-indicator"></div>
+    </div>
+    <div class="text-display"></div>
+
+    <script>
+        const soundData = {
+            "Lion": [
+                "Vorrh-Karrh",
+                "Gruk-Shorrhh",
+                "Raa'Kkuunh",
+                "Zorrh-Gannhh"
+            ],
+            "Bird": [
+                "Tzeee-Vrrriiik",
+                "Chrrzz-Kleklek",
+                "Whiir-Trzzzt",
+                "Veeek-Chaah"
+            ],
+            "Human": [
+                "Grahhh-Vuuhn",
+                "Zheeer-Maurrh",
+                "Orrhh-Kzzzt",
+                "Haun-Vrroooh"
+            ],
+            "Cow": [
+                "Muurh-Zorrhh",
+                "Bruuun-Kaauhh",
+                "Glaurh-Veehh",
+                "Wauhh-Znoorr"
+            ]
+        };
+
+        const imageData = [
+            { path: 'animals/animal_00.png', category: 'Lion' },
+            { path: 'animals/animal_01.png', category: 'Bird' },
+            { path: 'animals/animal_02.png', category: 'Human' },
+            { path: 'animals/animal_03.png', category: 'Cow' }
+        ];
+
+        let currentSlide = 0;
+        let audioPlaying = false;
+        const container = document.querySelector('.slideshow-container');
+        const textDisplay = document.querySelector('.text-display');
+        const loadingIndicator = document.querySelector('.loading-indicator');
+
+        // Create slides
+        imageData.forEach((data, index) => {
+            const slide = document.createElement('div');
+            slide.className = `slide ${index === 0 ? 'active' : ''}`;
+            const img = document.createElement('img');
+            img.src = data.path;
+            img.alt = data.category;
+            slide.appendChild(img);
+            container.appendChild(slide);
+        });
+
+        function getRandomText(category) {
+            const texts = soundData[category];
+            return texts[Math.floor(Math.random() * texts.length)];
+        }
+
+        function showLoadingIndicator(show) {
+            loadingIndicator.classList.toggle('active', show);
+        }
+
+        async function playSlideSound(category) {
+            if (audioPlaying) return;
+            
+            audioPlaying = true;
+            showLoadingIndicator(true);
+            
+            const audio = new Audio(`Sounds/${category}.wav`);
+            audio.autoplay = true;
+            textDisplay.textContent = getRandomText(category);
+            
+            try {
+                // Create a user interaction promise
+                const userInteractionPromise = new Promise((resolve) => {
+                    document.addEventListener('click', function handler() {
+                        document.removeEventListener('click', handler);
+                        resolve();
+                    }, { once: true });
+                });
+
+                // Try to play immediately first
+                try {
+                    await audio.play();
+                } catch (e) {
+                    // If immediate play fails, wait for user interaction
+                    textDisplay.textContent = "Click anywhere to start the slideshow...";
+                    await userInteractionPromise;
+                    await audio.play();
+                }
+                
+                showLoadingIndicator(false);
+                
+                audio.onended = () => {
+                    audioPlaying = false;
+                    nextSlide();
+                };
+            } catch (error) {
+                console.error('Error playing audio:', error);
+                audioPlaying = false;
+                showLoadingIndicator(false);
+            }
+        }
+
+        function nextSlide() {
+            if (audioPlaying) return;
+            
+            const slides = document.querySelectorAll('.slide');
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+            
+            const category = imageData[currentSlide].category;
+            playSlideSound(category);
+        }
+
+        // Start the slideshow
+        const firstCategory = imageData[0].category;
+        playSlideSound(firstCategory);
+    </script>
+</body>
+</html>
