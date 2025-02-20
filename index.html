@@ -27,7 +27,6 @@
             overflow: hidden;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            background: #000;
         }
 
         .slide {
@@ -164,24 +163,7 @@
             textDisplay.textContent = getRandomText(category);
             
             try {
-                // Create a user interaction promise
-                const userInteractionPromise = new Promise((resolve) => {
-                    document.addEventListener('click', function handler() {
-                        document.removeEventListener('click', handler);
-                        resolve();
-                    }, { once: true });
-                });
-
-                // Try to play immediately first
-                try {
-                    await audio.play();
-                } catch (e) {
-                    // If immediate play fails, wait for user interaction
-                    textDisplay.textContent = "Click anywhere to start the slideshow...";
-                    await userInteractionPromise;
-                    await audio.play();
-                }
-                
+                await audio.play();
                 showLoadingIndicator(false);
                 
                 audio.onended = () => {
@@ -192,6 +174,8 @@
                 console.error('Error playing audio:', error);
                 audioPlaying = false;
                 showLoadingIndicator(false);
+                // If audio fails, still advance to next slide after a delay
+                setTimeout(nextSlide, 2000);
             }
         }
 
