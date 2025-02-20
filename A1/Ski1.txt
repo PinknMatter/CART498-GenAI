@@ -1,1 +1,0 @@
-prompt = "ff-collage, surreal fingers skiing down a hill in summer"
