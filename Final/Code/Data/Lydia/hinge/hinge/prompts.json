@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "prompt": "A life goal of mine",
+        "type": "text",
+        "text": "grow out my bangs",
+        "user_updated": "2023-05-05 18:16:23.541523",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 2,
+        "prompt": "I go crazy for",
+        "type": "text",
+        "text": "breakcore",
+        "user_updated": "2023-05-05 18:16:23.541523",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 3,
+        "prompt": "An overshare",
+        "type": "voice",
+        "media_url": "https://hinge-res.cloudinary.com/video/upload/v1655696035/wywcdwxczdmqpy2ych5v.aac",
+        "user_updated": "2022-06-20 03:33:56.506919",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 4,
+        "prompt": "I go crazy for",
+        "type": "text",
+        "text": "breakcore",
+        "user_updated": "2023-05-02 22:18:46.371971",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 5,
+        "prompt": "This year, I really want to",
+        "type": "text",
+        "text": "meet people \ud83e\udde0",
+        "user_updated": "2023-05-08 07:13:13.453971",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 6,
+        "prompt": "My mantra is",
+        "type": "text",
+        "text": "keep cool but care \ua9c2",
+        "user_updated": "2023-05-05 18:16:23.541523",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 7,
+        "prompt": "A life goal of mine",
+        "type": "text",
+        "text": "grow out my bangs",
+        "user_updated": "2023-05-02 22:18:46.371971",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 8,
+        "prompt": "I go crazy for",
+        "type": "text",
+        "text": "breakcore",
+        "user_updated": "2022-06-13 04:40:37.682296",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 9,
+        "prompt": "Try to guess this about me",
+        "type": "text",
+        "text": "my sun/moon/rising \ud83d\ude01\ud83d\ude01\ud83d\ude01",
+        "user_updated": "2022-06-08 16:01:17.305127",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 10,
+        "prompt": "My mantra is",
+        "type": "text",
+        "text": "keep cool but care \ua9c2",
+        "user_updated": "2023-05-02 22:18:46.371971",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 11,
+        "prompt": "A life goal of mine",
+        "type": "text",
+        "text": "grow out my bangs",
+        "user_updated": "2023-05-01 17:49:15.163235",
+        "created": "2022-06-20 03:18:26.774205"
+    },
+    {
+        "id": 12,
+        "prompt": "I go crazy for",
+        "type": "text",
+        "text": "breakcore",
+        "user_updated": "2022-06-20 03:18:26.774205",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 13,
+        "prompt": "Try to guess this about me",
+        "type": "text",
+        "text": "my sign",
+        "user_updated": "2022-06-08 04:34:57.467248",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 14,
+        "prompt": "My mantra is",
+        "type": "text",
+        "text": "keep cool but care \ua9c2",
+        "user_updated": "2022-06-08 04:34:57.467248",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 15,
+        "prompt": "I\u2019m looking for",
+        "type": "text",
+        "text": "friends \u2764\ufe0f\ud83e\udef6 or foe \ud83d\udc94\ud83d\udd95",
+        "user_updated": "2022-07-11 22:14:33.034344",
+        "created": "2022-06-20 03:18:26.774205"
+    },
+    {
+        "id": 16,
+        "prompt": "My mantra is",
+        "type": "text",
+        "text": "keep cool but care \ua9c2",
+        "user_updated": "2022-06-20 03:18:26.774205",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 17,
+        "prompt": "I\u2019m looking for",
+        "type": "text",
+        "text": "summer fun \ud83e\udd1f\ud83e\udd1f\ud83e\udd1f",
+        "user_updated": "2022-06-20 03:18:26.774205",
+        "created": "2022-06-20 03:18:26.774205"
+    },
+    {
+        "id": 18,
+        "prompt": "I\u2019m looking for",
+        "type": "text",
+        "text": "summer fun \ud83e\udd1f\ud83e\udd1f\ud83e\udd1f",
+        "user_updated": "2022-06-13 04:39:42.400392",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 19,
+        "prompt": "I\u2019m looking for",
+        "type": "text",
+        "text": "summer fun \ud83e\udd1f\ud83e\udd1f\ud83e\udd1f",
+        "user_updated": "2022-06-08 04:34:57.467248",
+        "created": "2022-06-08 04:34:57.467248"
+    },
+    {
+        "id": 20,
+        "prompt": "I\u2019m looking for",
+        "type": "text",
+        "text": "fun \ud83e\udd18\ud83e\udd18",
+        "user_updated": "2022-07-12 22:06:17.160035",
+        "created": "2022-06-20 03:18:26.774205"
+    }
+]
