@@ -3,8 +3,6 @@ class MessageManager {
         this.displayMessages = [];
         this.isLoaded = false;
         this.lastMessageTime = 0;
-        this.messageInterval = 1000;
-        this.maxMessages = 15;
         this.maxAttempts = 15;
         
         // Cache for message widths
@@ -47,7 +45,7 @@ class MessageManager {
 
     checkOverlap(x, y, messageWidth) {
         const fontSize = window.currentTextSize || 16;
-        const margin = fontSize * 1.5; // Increased margin for better spacing
+        const margin = fontSize * 0.1; // Increased margin for better spacing
         const box = {
             left: x - messageWidth/2 - margin,
             right: x + messageWidth/2 + margin,
@@ -129,8 +127,9 @@ class MessageManager {
             const fps = frameRate();
             this.lowPerformanceMode = fps < 30;
             
+            const maxMessages = window.maxMessages || 15;
             if (this.lowPerformanceMode) {
-                while (this.displayMessages.length > this.maxMessages/2) {
+                while (this.displayMessages.length > maxMessages/2) {
                     const msg = this.displayMessages.shift();
                     if (msg) msg.cleanup();
                 }
@@ -150,9 +149,12 @@ class MessageManager {
             this.lastCleanup = now;
         }
 
+        const maxMessages = window.maxMessages || 15;
+        const messageInterval = window.messageInterval || 1000;
+        
         if (!this.lowPerformanceMode && 
-            now - this.lastMessageTime > this.messageInterval && 
-            this.displayMessages.length < this.maxMessages) {
+            now - this.lastMessageTime > messageInterval && 
+            this.displayMessages.length < maxMessages) {
             if (this.createNewMessage()) {
                 this.lastMessageTime = now;
             }

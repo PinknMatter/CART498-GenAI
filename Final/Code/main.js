@@ -85,11 +85,26 @@ ipcMain.on('update-highlight-duration', (event, value) => {
     mainWindow.webContents.send('update-highlight-duration', value);
 });
 
+ipcMain.on('update-max-messages', (event, value) => {
+    mainWindow.webContents.send('update-max-messages', value);
+});
+
+ipcMain.on('update-message-lifetime', (event, value) => {
+    mainWindow.webContents.send('update-message-lifetime', value);
+});
+
+ipcMain.on('update-birth-rate', (event, value) => {
+    mainWindow.webContents.send('update-birth-rate', value);
+});
+
 // Send initial values to control window when it's ready
 ipcMain.on('control-window-ready', () => {
     controlWindow.webContents.send('init-controls', {
         textSize: 16,
         maxHighlights: 3,
-        highlightDuration: 3000
+        highlightDuration: 3000,
+        maxMessages: 15,
+        messageLifetime: 10000,
+        birthRate: 1000
     });
 });

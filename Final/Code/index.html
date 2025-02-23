@@ -34,9 +34,24 @@
             window.highlightDuration = value;
         });
 
+        ipcRenderer.on('update-max-messages', (event, value) => {
+            window.maxMessages = value;
+        });
+
+        ipcRenderer.on('update-message-lifetime', (event, value) => {
+            window.messageLifetime = value;
+        });
+
+        ipcRenderer.on('update-birth-rate', (event, value) => {
+            window.messageInterval = value;
+        });
+
         // Set initial values
         window.maxHighlights = 3;
         window.highlightDuration = 3000;
+        window.maxMessages = 15;
+        window.messageLifetime = 10000;
+        window.messageInterval = 1000;
     </script>
     <script src="textClass.js"></script>
     <script src="messageManager.js"></script>

@@ -29,7 +29,7 @@ function preload() {
 function setup() {
     createCanvas(windowWidth, windowHeight);
     textWrap(WORD);
-    background(255);
+    background(0);
     frameRate(60);
 }
 
@@ -44,11 +44,11 @@ function draw() {
     
     // Clear the background each frame
     clear();
-    background(255);
+    background(0);
     
     // Show loading message if data isn't ready
     if (!messageManager || !messageManager.isLoaded) {
-        fill(0);
+        fill(255);
         textSize(window.currentTextSize);
         textAlign(CENTER, CENTER);
         text('Loading messages...', width/2, height/2);
@@ -59,7 +59,7 @@ function draw() {
     messageManager.display();
     
     // Display performance stats
-    fill(0);
+    fill(255);
     textAlign(LEFT, TOP);
     textSize(12);
     text(`FPS: ${currentFps}`, 10, 10);
